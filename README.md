@@ -7,7 +7,7 @@ ao = agent orchestrator
 - default instructions can be prepended to all tasks using `ao.txt`
 
 > [!IMPORTANT]
-> Requires [Bun](https://bun.sh) >= 1.3, [tmux](https://github.com/tmux/tmux), and the [Claude Code CLI](https://docs.claude.com/en/docs/claude-code) on `PATH`.
+> Requires [Bun](https://bun.sh) >= 1.3, [tmux](https://github.com/tmux/tmux) and the [Claude Code CLI](https://docs.claude.com/en/docs/claude-code) on `PATH`
 
 ## Build
 
