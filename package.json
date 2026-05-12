@@ -8,7 +8,6 @@
 		"ao": "cli.ts"
 	},
 	"scripts": {
-		"start": "bun run cli.ts",
 		"build": "bun build cli.ts --compile --outfile $HOME/.bun/bin/ao"
 	},
 	"devDependencies": {

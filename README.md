@@ -1,6 +1,10 @@
 # ao
 
-agent orchestrator
+ao = agent orchestrator
+
+- `ao up` watches a simple `todo.txt` file for new tasks and spawns `claude` agents in `tmux` sessions
+- `ao add <task>` adds a new task
+- default instructions can be prepended to all tasks using `ao.txt`
 
 > [!IMPORTANT]
 > Requires [Bun](https://bun.sh) >= 1.3, [tmux](https://github.com/tmux/tmux), and the [Claude Code CLI](https://docs.claude.com/en/docs/claude-code) on `PATH`.
@@ -32,11 +36,3 @@ Each new task spawns a tmux pane (or detached session if not already running tmu
 Optionally, place an `ao.txt` in the cwd to prepend shared context to every task's prompt. The file is read fresh on each spawn, so edits apply to the next task without restarting `ao up`.
 
 ![ao demo](https://github.com/user-attachments/assets/cd869c18-1206-43f5-9168-0899f367fb81)
-
-## Development
-
-Run source:
-
-```sh
-bun start
-```
